@@ -96,4 +96,4 @@ La aplicación cuenta con un sistema de autenticación basado en JWT. Se pueden 
 ## Documentación de la API
 
 - **Swagger**: Accede a la documentación en `http://localhost:8080/swagger-ui/index.html#/`.
-- **Postman**: Se ha incluido una colección de Postman en el repositorio para facilitar las pruebas. Puedes importarla en Postman y utilizar los endpoints de manera rápida.
+- **Postman**: Se ha incluido una colección de Postman en el repositorio para facilitar las pruebas. Puedes importarla en Postman y utilizar los endpoints de manera rápida. Se encuentra en resources
