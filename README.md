@@ -25,8 +25,8 @@ Antes de ejecutar la aplicación, asegúrate de tener instalados:
 1. Clona el repositorio:
 
    ```sh
-   git clone https://github.com/tu-repo.git
-   cd tu-repo
+   git clone https://github.com/Lucas1298/Mindata-Challenger.git
+   cd Mindata-Challenger
    ```
 
 2. Construye y levanta los contenedores con Docker Compose:
