@@ -22,6 +22,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Optional;
 
 @Service
 public class SpaceshipServiceImpl implements SpaceshipService {
@@ -61,7 +62,7 @@ public class SpaceshipServiceImpl implements SpaceshipService {
     public Page<SpaceshipResponseDTO> findAll(Pageable pageable, String filters) {
         Specification<Spaceship> spec = Specification.where(null);
 
-        if (filters != null) {
+        if (Optional.ofNullable(filters).isPresent()){
             spec = SpaceshipSpecification.filterByParams(convertStringToMap(filters));
         }
 
