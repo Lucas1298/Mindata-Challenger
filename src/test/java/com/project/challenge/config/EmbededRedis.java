@@ -3,12 +3,11 @@ package com.project.challenge.config;
 import jakarta.annotation.PostConstruct;
 import jakarta.annotation.PreDestroy;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.stereotype.Component;
+import org.springframework.boot.test.context.TestConfiguration;
 import redis.embedded.RedisServer;
-
 import java.io.IOException;
 
-@Component
+@TestConfiguration
 public class EmbededRedis {
 
     @Value("${spring.redis.port}")
